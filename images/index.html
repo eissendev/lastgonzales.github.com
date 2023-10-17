@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+    
+    <script src="https://kit.fontawesome.com/39949b677b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id = "header">
+    <div class = "container">
+        <nav>
+            <img src = "/SP/HEAD.jpg" class = "logo">
+            <ul id = "side  menu">
+                <li><a href = "#header">Home</a></li>
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#services">Services</a></li>
+                <li><a href = "#portfolio">Portfolio</a></li>
+                <li><a href = "#favorites">Favorites</a></li>
+                <li><a href = "#contacts">Contact</a></li>
+                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span class = "space glowing-text"> Eissen Howellvert</span>from COE-3A.</h1>
+
+        </div>
+    </div>
+</div>
+<!-- ABOUT ME-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/SP/img.jpg" alt="My Image" class="about-image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Born in San Leonardo, Nueva Ecija and currently studying Bachelor of Science in Computer Engineering in PSU Urdaneta</p>
+                <div class="tab-titles">
+                    <p class ="tab-links active-link" onclick = "opentab('skills')">Skills</p>
+                    <p class = "tab-links" onclick = "opentab('experience')">Experience</p>
+                    <p class = "tab-links" onclick = "opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id = "skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Building Website</li>
+                        <li><span>Computer System Servicing</span><br>Install OS or hardware and Troubleshooting, etc.</li>
+                        <li><span>Tutor</span><br>Teaching basic Math and English</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "experience">
+                    <ul>
+                        <li><span>(2015-2018)</span><br>Computer Shop Server</li>
+                        <li><span> (2021-2022)</span><br>NFT</li>
+                        <li><span>(2023-present)</span><br>assistant of software developer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "education">
+                    <ul>
+                        <li><span>Elementary (2013-2014)</span><br>Santa Maria East Integrated School</li>
+                        <li><span>Senior High School (2020-2021)</span><br>Acess Computer College</li>
+                        <li><span>College(2021-Present)</span><br>Pangasinan State University</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">MY SERVICES</h1>
+        <div class="service-list">
+            <div>
+                <i class="fa fa-code"></i>
+                <h2 class = "botspace">Web Development</h2>
+                <p>EISSEN HOWELLVERT C. GONZALES</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa fa-computer"></i>
+                <h2 class = "botspace">Computer System Servicing</h2>
+                <p>EISSEN HOWELLVERT C. GONZALES</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa fa-chalkboard-user"></i>
+                <h2 class = "botspace">Tutor</h2>
+                <p>EISSEN HOWELLVERT C. GONZALES</p>
+                <a href="#">Learn More</a>
+            </div>            
+        </div>
+    </div>
+</div>
+<!--portfolio-->
+<div id ="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/SP/pc.jpg">
+                <div class="layer">
+                    <h3>Hardware Components</h3>
+                    <p>Building System unit and installing OS on it</p>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="/SP/website1.png">
+                <div class="layer">
+                    <h3>Responsive Card Layout</h3>
+                    <p>I created responsive cardlayout using HTML and CSS./p>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="/SP/logics.jpg">
+                <div class="layer">
+                    <h3>XNOR</h3>
+                    <p>i build XNOR circuit using breadboard, XNOR IC, LED's, etc.</p>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!--favorites-->
+<div id = "favorites"></div>
+<div class="videolist">
+    <h4></h4>
+    <h2 id = "sectionfav">MY FAVORITES</h2>
+    <h2 class = "h2sel">GOJO SATORU</h2>
+    <h3 class = "h3sel">(Jujutsu Kaisen)</h3>
+    <div class="video">
+        <div class="thumbnail"></div>
+        <video class="thevideo" controls loop>
+            <source src="/SP/gojo.mp4" type=    "video/mp4"></source>
+        </video>
+    </div>
+    <div><a href = "https://9animetv.to/watch/jujutsu-kaisen-tv-534?ep=10789" target = "_blank" rel = "noopener noreferrer"><span>Watch now</span></a></div>
+    <h2 class="h2sel">DOTA 2</h2>
+    <h3 class = "h3sel">(MOBA)</h3>
+    <div class="video">
+        <div class="thumbnail2"></div>
+        <video class="thevideo" controls loop>
+            <source src="/SP/DOTA.mp4" type="video/mp4"></source>
+        </video>
+    </div>
+    <div><a href = "https://store.steampowered.com/about/" target = "_blank" rel = "noopener noreferrer"><span>Play now</span></a></div>
+    <h2 class="h2sel">FOOD</h2>
+    <h3 class = "h3sel">food near urdaneta</h3>
+    <div class="video">
+        <div class="thumbnail3"></div>
+        <video class="thevideo" controls loop>
+            <source src="/SP/food.mp4" type="video/mp4"></source>
+        </video>
+    </div>
+    <div><a href = "https://www.facebook.com/eissen.gonzales.1"target = "_blank" rel = "noopener noreferrer"><span>Ask?</span></a></div>
+    <br>
+    <h3 class="h3sel">END OF THE FAVORITES CONTENT</h3>
+</div>
+
+<!--contacts-->
+<div class="container">
+    <div id="contacts"></div>
+    <div class ="contact">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p class = "edit1"><i class="fa-solid fa-paper-plane"></i> eissengonzales23@example.com</p>
+            <p class = "edit2"><i class="fa-solid fa-phone"></i> 09562681744</p>
+            <div class="social-icons">
+                <a class="social-icon" href="https://www.facebook.com/eissen.gonzales.1" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                <a class="social-icon" href="https://www.instagram.com/eissen_gonzales/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made with <i class="fa-solid fa-heart" style="color: #e60000;"></i> by Eissen Howellvert Gonzales, Midterm for Web Development.</p>
+    </div>
+</div>
+
+
+    
+</div>
+<script src = "script.js"></script> <!--script for video in favorites-->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");   
+    }
+    
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
